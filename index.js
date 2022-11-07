@@ -280,6 +280,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(7000, () => {
+app.listen(3000, () => {
   console.log("App Listning @7000");
 });
