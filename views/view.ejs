@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 15px 56px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      .link {
+        text-decoration: none;
+        color: aliceblue;
+        width: 150px;
+        height: 50px;
+        margin: 50px auto;
+        background: cadetblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" action="order/add">
+        <label>Name</label>
+        <input type="text" name="name" />
+        <label>Email</label>
+        <input type="email" name="email" />
+        <label>Product Type</label>
+        <input type="text" name="product_type" />
+        <label>Product Name</label>
+        <input type="text" name="product_name" />
+        <label>Quantity</label>
+        <input type="text" name="quantity" />
+        <input type="submit" />
+      </form>
+      <a class="link" href="/">Orders</a>
+    </div>
+  </body>
+</html>
